@@ -22,10 +22,10 @@ $(document).ready(function () {
     initialSlide: 0,
 
     // sliderlar default ozgarib turish
-    autoplay: false,
+    autoplay: true,
 
     //sliderlar default ozgarib turish vaqini belgilash
-    // autoplaySpeed: 500,
+    autoplaySpeed: 2000,
 
     //silder hududiga bosganda tohtashi
     // pouseOnFocus: true
