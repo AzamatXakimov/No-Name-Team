@@ -1,1 +1,11 @@
 /* VARIABLES */
+
+$body-bg : #fff;
+
+/* ROOT */
+:root{
+    /* --main-font-family: "Roboto", "Arial", sans-serif; */
+    /* --main-font-weight: 400; */
+    --main-body-bg-color: #{$body-bg};
+    /* --main-text-color: #333; */
+}
