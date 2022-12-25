@@ -21,7 +21,7 @@ $(document).ready(function() {
         infinite: true,
         
         // slider qaysi slidan boshlashi kerak ligini belgilash
-        initialSlide: 1,
+        initialSlide: 0,
         
         // sliderlar default ozgarib turish
         autoplay: false,
