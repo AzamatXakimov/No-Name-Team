@@ -90,6 +90,7 @@ $(document).ready(function () {
   });
   
 
+
 const elChooseItem = document.querySelectorAll(".choose-list__item")
 const elChooseLink = document.querySelectorAll(".choose-list__link")
 const elChooseWrapper = document.querySelectorAll(".choose-wrap__wrapper")
@@ -211,8 +212,18 @@ const renderBrandImg = () => {
       elBrandFrag.appendChild(elBrandTempClone)
     })
   }
-  else{
+  else if(localStorage.getItem("theme") == "dark"){
     brandImgArrLight.forEach(item => {
+      const elBrandTempClone = elBrandTemp.cloneNode(true)
+      
+      elBrandTempClone.querySelector(".js-brand-img").src = item.url;
+      elBrandTempClone.querySelector(".js-brand-img").alt = item.alt;
+      elBrandTempClone.querySelector(".js-brand-img").srcset = item.retina;
+      elBrandFrag.appendChild(elBrandTempClone)
+    })
+  }
+  else{
+    brandImgArr.forEach(item => {
       const elBrandTempClone = elBrandTemp.cloneNode(true)
       
       elBrandTempClone.querySelector(".js-brand-img").src = item.url;
