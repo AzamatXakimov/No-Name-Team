@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 // lenta slaydov
-.slick-track {
+.hero * .slick-track {
   display: flex;
 }
 
@@ -100,7 +100,7 @@
   background-size: cover;
   background-position: center center;
 }
-.slick-dots {
+.hero * .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,15 +112,15 @@
   padding: 0;
 }
 
-.slick-dots:focus {
+.hero * .slick-dots:focus {
   outline: var(--main-body-bg-color);
 }
 
-.slick-dots li {
+.hero * .slick-dots li {
   list-style: none;
 }
 
-.slick-dots li button {
+.hero * .slick-dots li button {
   font-size: 0;
   width: 5px;
   height: 10px;
@@ -129,7 +129,7 @@
   opacity: 0.5;
   border-radius: 50%;
 }
-.slick-dots li.slick-active button {
+.hero * .slick-dots li.slick-active button {
   width: 30px;
   opacity: 1;
   background-color: var(--main-body-bg-color);
@@ -211,7 +211,7 @@ br{
     background-position: center center;
     background-repeat: no-repeat;
   }
-  .slick-dots {
+  .hero * .slick-dots {
     bottom: 15px;
     right: calc(50% + 130px);
   }
@@ -265,7 +265,7 @@ br{
     background-image: url("/images/vans.png");
   }
 
-  .slick-dots {
+  .hero * .slick-dots {
     right: calc(50% + 190px);
   }
 }
@@ -298,7 +298,7 @@ br{
     border-radius: 50%;
     cursor: pointer;
   }
-  .slick-dots {
+  .hero * .slick-dots {
     right: calc(50% + 250px);
     bottom: 44px;
   }
