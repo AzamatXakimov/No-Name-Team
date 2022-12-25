@@ -1,13 +1,14 @@
 /* HEADER START */
+.nav-bar-show{
+    overflow: hidden;
+}
 .site-header {
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1.5px solid var(--border-color);
 }
 .site-header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display-justfiy-alain()
 }
 .logo__img {
     width: 150px;
@@ -22,28 +23,51 @@
 .site-header__navbtn--open {
     width: 40px;
     height: 20px;
-    background-image: url("../../images/");
+    background-image: url("../images/hamburg.svg");
     background-color: transparent;
+    background-size: cover;
 }
-.site-header__navinner{
+.dark-mode .site-header__navbtn--open {
+    background-image: url("../images/hamburg-white.svg");
+}
+.site-header__navbar {
     position: absolute;
     top: 0;
     right: 0;
+    display: none;
     width: 100%;
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
-.site-header__navbar {
+.nav-bar-show .site-header__navbar{
+    display: block;
+}
+.site-header__navinner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 350px;
-    height: 100%;
+    height: 100vh;
+    margin-left: auto;
+    padding: 20px;
     background-color: var(--main-body-bg-color);
-
+    overflow-y: scroll;
+    animation: navbar-animation 1s linear 0s 1 normal, forwards;
+}
+@keyframes navbar-animation{
+    0%{
+        right: -350px;
+    }
+    50%{
+        right: -175px;
+    }
+    100%{
+        right: 0;
+    }
 }
 .site-header__navtop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display-justfiy-alain();
     margin-bottom: 36px;
 }
 .site-header__navbtn--close {
@@ -51,31 +75,308 @@
     height: 48px;
     border-radius: 50%;
     background-color: var(--card-bg-color);
-    background-image: url("../../images/");
+    background-image: url("../images/hamburg-close.svg");
+}
+.dark-mode .site-header__navbtn--close{
+    background-image: url("../images/hamburg-close-white.svg");
 }
 .site-header__list {
-    margin-top: 0;
+    @include list-rest();
+}
+.site-header__item {
+    margin-bottom: 32px;
+}
+.site-header__link {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+.site-header__innerlist {
+    margin-top: 20px;
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
 }
-.site-header__item {
-    
-}
-.site-header__link {
-}
-.site-header__innerlist {
-}
-.site-header__inneritem {
+.site-header__inneritem:not(:last-child) {
+    margin-bottom: 16px;
 }
 .site-header__innerlink {
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: var(--main-desc-color);
+    text-decoration: none;    
 }
-.site-header__box {
+.site-header__box{
+    @include display-justfiy-alain(flex, space-between, start);
+    flex-direction: column;
+    flex-grow: 1;
+}
+.site-header__numberlink{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-text-color);
+    text-decoration: none;
 }
 .site-header__btnbox {
+    @include display-justfiy-alain(flex, end, center);
+    margin-top: 201px;
+    width: 100%;
 }
 .site-header__themebtn {
+    width: 58px;
+    height: 58px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: var(--card-bg-color);
+    color: var(--main-desc-color);
+    border: none;
+    transition:  background-color 0.3s ease, color 0.3s ease;
 }
-.site-header__login {
+.site-header__themebtn:hover {
+    color: var(--main-text-color);
 }
+.site-header__themebtn:active {
+    background-color: var(--site-main-color);
+    color: #fff;
+}
+.site-header__themeicondark{
+    display: none;
+}
+.dark-mode .site-header__themeiconlight {
+    display: none;
+}
+.dark-mode .site-header__themeicondark {
+    display: inline-block;
+}
+.login-btn {
+    @include display-justfiy-alain(inline-flex, center, center);
+    max-width: 142px;
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;    
+    background-color: var(--site-main-color);
+    border-radius: 100px;
+    border: none;
+    transition: background-color 0.3s ease;
+    &::after{
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-left: 8px;
+        background-image: url("../images/login-icon.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        content: "";
+    }
+    &:hover {
+        background-color: #077743;
+    }
+    &:active {
+        background-color: var(--card-bg-color);
+        color: var(--main-text-color);
+        &::after{
+            background-image: url("../images/login-icon-black.svg");
+        }
+    }
+}
+.dark-mode .login-btn:active::after{
+    background-image: url("../images/login-icon.svg");
+}
+
+
+@include mobile-first(510px){
+
+    .site-header {
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+    .site-header__navinner{
+        max-width: 475px;
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+    }
+    @keyframes navbar-animation{
+        0%{
+            right: -475px;
+        }
+        50%{
+            right: -237px;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    .site-header__navtop {
+        margin-bottom: 78px;
+    }
+    .site-header__item {
+        margin-bottom: 52px;
+    }
+    .site-header__link {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .site-header__box{
+        margin-top: auto;  
+        @include display-justfiy-alain(flex, space-between, center);
+        flex-direction: row
+    }
+    .site-header__btnbox {
+        @include display-justfiy-alain(flex, end, center);
+        margin-top: 0;
+        width: auto;
+    }
+    .site-header__themebtn {
+        flex-shrink: 0;
+    }
+    .site-header__numberlink{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+@include mobile-first(1050px){
+    .site-header {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .site-header__list{
+        display: flex;
+        align-items: center;
+    }
+    .site-header__inner {
+        justify-content: start;
+    }
+    .site-header__navbtn {
+        display: none;
+    }
+    .site-header__navbar {
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 20px;
+        // background-color: transparent;
+    }
+    .site-header__navinner{
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin-left: 0;
+        padding: 0;
+        background-color: var(--main-body-bg-color);
+        overflow: visible;
+        animation: none;
+    }
+    .site-header__navtop {
+        display: none;
+    }
+    .site-header__item {
+        position: relative;
+        margin-bottom: 0;
+    }
+    .site-header__link {
+        padding: 18px 16px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .site-header__link--list {
+        display: inline-flex;
+        align-items: center;
+        padding: 18px 16px;
+        border-radius: 100px;
+        &::after {
+            display: inline-block;
+            padding: 18px 16px;
+            width: 22px;
+            height: 22px;
+            margin-left: 8px;
+            background-image: url("../images/arrow-to-bottom.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            content: "";
+        }
+
+        &:hover {
+            background-color: var(--card-bg-color);
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+        &:hover ~ .site-header__innerlist{
+            display: block;
+        }
+    }
+    .dark-mode .site-header__link--list::after{
+        background-image: url("../images/arrow-to-bottom-white.svg");
+    }
+    .site-header__innerlist {
+        position: absolute;
+        top: 68px;
+        z-index: 10;
+        display: none;
+        width: 100%;
+        margin-top: 0px;
+        padding: 10px;
+        background-color: var(--main-body-bg-color);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+
+        &:hover {
+            display: block;
+        }
+    }
+    .site-header__inneritem:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .site-header__innerlink {
+        display: inline-block;
+        max-width: 169px;
+        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-right: 16px;
+        padding-left: 16px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--main-text-color);
+        border-radius: 100px;
+        transition: background-color 0.3s ease,  color  0.3s ease;
+    }
+    .site-header__innerlink:hover{
+        background-color: var(--card-bg-color);
+    }
+    .site-header__innerlink:active{
+        color: #fff;
+        background-color: var(--site-main-color);
+    }
+    .site-header__numberlink{
+        margin-right: 24px;
+    }
+    .site-header__box{
+        margin-top: 0;
+        flex-grow: 0;
+    }
+    .site-header__btnbox {
+        @include display-justfiy-alain(flex, center, center);
+        width: auto;
+    }
+}
+
+
 /* HEADER END */
