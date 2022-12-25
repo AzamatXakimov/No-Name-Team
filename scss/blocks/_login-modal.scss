@@ -1,0 +1,233 @@
+.show-login{
+    overflow: hidden;
+}
+.show-login .login-modal{
+    display: block;
+}
+
+.login-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.login-modal__form {
+    position: relative;
+    top: 100px;
+    max-width: 590px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background-color: var(--main-body-bg-color);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    animation: login-animation 1s linear 0s 1 normal, forwards;
+}
+
+@keyframes login-animation{
+    0%{
+        top: -350px;
+    }
+    50%{
+        top: -175px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+.login-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 58px;
+    height: 58px;
+    background-color: var(--card-bg-color);
+    background-image: url("../images/hamburg-close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: none;
+}
+.dark-mode .login-modal__close {
+    background-image: url("../images/hamburg-close-white.svg");
+}
+.login-modal__title {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+.login-modal__desc {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--main-desc-color);
+}
+.login-modal__label{
+    position: relative;
+    display: block;
+}
+.login-modal__showpassword{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/eye-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.login-modal__showpassword--open{
+    background-image: url("../images/eye-slesh-icon.svg");
+}
+.dark-mode .login-modal__showpassword{
+    background-image: url("../images/eye-icon-white.svg");
+}
+.dark-mode .login-modal__showpassword--open{
+    background-image: url("../images/eye-slesh-icon-white.svg");
+}
+.login-modal__input {
+    width: 100%;
+    padding: 18px 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--main-text-color);
+    background-color: transparent;
+    border: 1.5px solid var(--border-color);
+    border-radius: 82px;
+    transition: border-color 0.3s ease;
+
+    &::placeholder{
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--main-desc-color);        
+    }
+
+    &:not(:placeholder-shown):not(:focus):invalid{
+        border: 2px solid #ff3b30;
+
+        & ~ .login-modal__box .login-modal__invalid{
+            opacity: 1;
+        }
+    }
+
+    &:not(:placeholder-shown):not(:focus):valid{
+        border: 2px solid #299764;
+    }
+}
+.login-modal__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-modal__invalid {
+    opacity: 0;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ff3b30;    
+}
+.login-moda__passwordtext {
+    display: inline-block;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: var(--main-desc-color);
+}
+.login-modal__text {
+    margin-top: 16px;
+    margin-bottom: 46px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+.login-modal__btn {
+    @include display-justfiy-alain(inline-flex, center, center);
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;    
+    background-color: var(--site-main-color);
+    border-radius: 100px;
+    border: none;
+    transition: background-color 0.3s ease;
+    &::after{
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-left: 8px;
+        background-image: url("../images/login-icon.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        content: "";
+    }
+    &:hover {
+        background-color: #077743;
+    }
+    &:active {
+        background-color: var(--card-bg-color);
+        color: var(--main-text-color);
+        &::after{
+            background-image: url("../images/login-icon-black.svg");
+        }
+    }
+}
+.dark-mode .login-modal__btn:active::after{
+    background-image: url("../images/login-icon.svg");
+}
+
+@include mobile-first(786px){
+    .login-modal__form {
+        top: 150px;
+        padding: 40px 32px;
+    }
+    @keyframes login-animation{
+        0%{
+            top: -350px;
+        }
+        50%{
+            top: -175px;
+        }
+        100%{
+            top: 150px;
+        }
+    }
+    .login-modal__close {
+        top: 24px;
+        right: 24px;
+    }
+    .login-modal__title {
+        margin-bottom: 10px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .login-modal__desc {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .login-modal__text {
+        margin-top: 26px;
+        margin-bottom: 32px;
+    }
+}

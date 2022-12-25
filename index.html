@@ -14,24 +14,24 @@
         <div class="container">
             <div class="site-header__inner">
                 <a class="logo" href="./index.html">
-                    <img class="logo__img" src="./images/" width="150" height="40"
-                    srcset="./images/ 1x , ./images/@2x 2x"
+                    <img class="logo__img" src="./images/logo-m.png" width="150" height="40"
+                    srcset="./images/logo-m.png 1x , ./images/logo-m@2x.png 2x"
                     alt="Site Logo">
                 </a>
 
-                <button class="site-header__navbtn site-header__navbtn--open">
+                <button class="site-header__navbtn site-header__navbtn--open js-navbar-open-btn">
                 </button>
 
-                <nav class="site-header__navbar">
+                <nav class="site-header__navbar js-navbar">
                     <div class="site-header__navinner">
                         <div class="site-header__navtop">
-                            <a href="logo">
-                                <img class="logo__img" src="/images/" width="150" height="40"
-                                srcset="./images/ 1x , ./images/@2x 2x"
+                            <a class="logo" href="./index.html">
+                                <img class="logo__img" src="./images/logo-m.png" width="150" height="40"
+                                srcset="./images/logo-m.png 1x , ./images/logo-m@2x.png 2x"
                                 alt="Site Logo">
                             </a>
     
-                            <button class="site-header__navbtn site-header__navbtn--close">
+                            <button class="site-header__navbtn site-header__navbtn--close js-navbar-close-btn">
     
                             </button>
                         </div>
@@ -43,7 +43,7 @@
                                 </a>
                             </li>
                             <li class="site-header__item">
-                                <a class="site-header__link" href="#">
+                                <a class="site-header__link site-header__link--list" href="#">
                                     About Us
                                 </a>
                                 <ul class="site-header__innerlist">
@@ -65,7 +65,7 @@
                                 </ul>
                             </li>
                             <li class="site-header__item">
-                                <a class="site-header__link" href="#">
+                                <a class="site-header__link site-header__link--list" href="#">
                                     Help center
                                 </a>
                                 <ul class="site-header__innerlist">
@@ -84,12 +84,13 @@
                         </ul>
                         
                         <div class="site-header__box">
-                            <a class="site-header__link" href="tel:18554200000">+1 855 420 0000</a>
+                            <a class="site-header__numberlink" href="tel:18554200000">+1 855 420 0000</a>
                             <div class="site-header__btnbox">
-                                <button class="site-header__themebtn">
-    
+                                <button class="site-header__themebtn js-theme-btn" type="button">
+                                    <svg class="site-header__themeiconlight" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="currentColor" d="M8 .208a7.792 7.792 0 1 0 7.756 8.544.458.458 0 0 0-.745-.4 4.583 4.583 0 1 1-5.626-7.235.458.458 0 0 0-.206-.82A7.85 7.85 0 0 0 8 .208Z"/></svg>
+                                    <svg class="site-header__themeicondark" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .146c.38 0 .688.308.688.687v.917a.688.688 0 0 1-1.376 0V.833c0-.38.308-.687.688-.687ZM10 4.73a5.27 5.27 0 1 0 0 10.54 5.27 5.27 0 0 0 0-10.54ZM4.004 3.032a.688.688 0 0 0-.972.972l.648.648a.687.687 0 1 0 .972-.972l-.648-.648ZM19.854 10c0 .38-.308.687-.687.687h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM16.968 4.004a.687.687 0 1 0-.972-.972l-.649.648a.687.687 0 0 0 .973.972l.648-.648ZM10 17.562c.38 0 .688.308.688.688v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.688.688-.688ZM16.32 15.347a.688.688 0 1 0-.973.973l.649.648a.688.688 0 0 0 .972-.972l-.648-.649ZM2.437 10c0 .38-.307.687-.687.687H.833a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM4.652 16.32a.688.688 0 0 0-.972-.973l-.648.649a.688.688 0 0 0 .972.972l.648-.648Z" fill="#fff"/></svg>
                                 </button>
-                                <button class="site-header__login">Login</button>
+                                <button class="login-btn js-login-btn" type="button">Login</button>
                             </div>
                         </div>
                     </div>
@@ -115,6 +116,42 @@
 
     </footer>
     <!-- Footer finish -->
+
+
+    <div class="login-modal js-login-modal">
+        <form class="login-modal__form js-login-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <button class="login-modal__close js-login-modal-close" type="button">
+            </button>
+            <h2 class="login-modal__title">
+                Login
+            </h2>
+            <p class="login-modal__desc">
+                Use the email and password that you login
+            </p>
+            <label class="login-modal__label">
+                <input class="login-modal__input" type="email" name="user_email" aria-label="Enter your email" placeholder="Email">
+                <div class="login-modal__box">
+                    <span class="login-modal__invalid">Entered the wrong email</span>
+                </div>
+            </label>
+            <label class="login-modal__label">
+                <input class="login-modal__input js-password-input" type="password" name="user_password" aria-label="Enter your password" placeholder="Password" minlength="8" required>
+                <button class="login-modal__showpassword js-show-password-btn" type="button">
+
+                </button>
+                <div class="login-modal__box">
+                    <span class="login-modal__invalid">Entered the wrong password</span>
+                    <span class="login-moda__passwordtext">
+                        Forgot password
+                    </span>
+                </div>
+            </label>
+            <p class="login-modal__text">I want to create an account</p>
+            <button class="login-modal__btn" type="submit">
+                Login
+            </button>
+        </form>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>

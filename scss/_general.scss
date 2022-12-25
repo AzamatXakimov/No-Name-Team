@@ -30,6 +30,15 @@ body{
     font-family: var(--main-font-family);
     font-weight: var(--main-font-weight);
     background-color: var(--main-body-bg-color);
+    overflow-x: hidden;
+}
+
+.dark-mode{
+    --main-body-bg-color: #1c1c1c;
+    --main-text-color: #fff;
+    --main-desc-color: #fff;
+    --card-bg-color: #272727;
+    --border-color: #333;
 }
 
 .site-main{
