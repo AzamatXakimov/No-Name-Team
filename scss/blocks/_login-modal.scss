@@ -80,6 +80,11 @@
     position: relative;
     display: block;
 }
+.login-modal__passwordtext{
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-desc-color);    
+}
 .login-modal__showpassword{
     position: absolute;
     top: 18px;
