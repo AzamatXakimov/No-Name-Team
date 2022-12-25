@@ -1,0 +1,253 @@
+.safe {
+    margin-bottom: 100px;
+}
+.safe__inner {
+    padding: 24px 20px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 20px;
+    background-image: url("../../images/around-icon.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 50px) calc(50% - 280px);
+}
+.safe__textbox {
+    max-width: 447px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.safe__titlebox{
+    max-width: 183px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.safe__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-text-color);
+}
+.safe__desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--main-desc-color);
+}
+.safe__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    @include list-rest();
+}
+.safe__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    background-color: var(--card-bg-color);
+    border-radius: 16px;
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+    &::before {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        content: "";
+    }
+    &:hover{
+        background-color: var(--site-main-color);
+    }
+
+    &:nth-child(1){
+        &::before{
+            background-image: url("../images/cleaned-icon.svg");
+        }
+        &:hover{
+            &::before{
+                background-image: url("../images/cleaned-icon-white.svg");
+            }
+        }
+    }
+
+    &:nth-child(2){
+        &::before{
+            background-image: url("../images/wear-icon.svg");
+        }
+        &:hover{
+            &::before{
+                background-image: url("../images/wear-icon-white.svg");
+            }
+        }
+    }
+
+    &:nth-child(3){
+        &::before{
+            background-image: url("../images/protocol-icon.svg");
+        }
+        &:hover{
+            &::before{
+                background-image: url("../images/protocol-icon-white.svg");
+            }
+        }
+    }
+}
+.dark-mode .safe__item {
+    &:nth-child(1){
+        &::before{
+            background-image: url("../images/cleaned-icon-white.svg");
+        }
+    }
+
+    &:nth-child(2){
+        &::before{
+            background-image: url("../images/wear-icon-white.svg");
+        }
+    }
+
+    &:nth-child(3){
+        &::before{
+            background-image: url("../images/protocol-icon-white.svg");
+        }
+    }
+}
+.safe__itembox{
+    width: 100%;
+}
+.safe__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main-text-color);    
+}
+
+@include mobile-first(510px){
+    .safe {
+        margin-bottom: 120px;
+    }
+    .safe__inner {
+        padding: 30px 24px;
+    }
+    .safe__textbox {
+        max-width: none;
+        width: auto;
+        margin-bottom: 35px;
+    }
+    .safe__titlebox{
+        max-width: 447px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .safe__title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .safe__desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .safe__list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .safe__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 14px;
+        padding-left: 14px;
+        background-color: var(--card-bg-color);
+        border-radius: 16px;
+        transition: background-color 0.3s ease, background-image 0.3s ease;
+        &:not(:last-child){
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
+        &::before {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+        }
+        &:hover{
+            background-color: var(--site-main-color);
+        }
+    
+        &:nth-child(1){
+            &::before{
+                background-image: url("../images/cleaned-icon.svg");
+            }
+            &:hover{
+                &::before{
+                    background-image: url("../images/cleaned-icon-white.svg");
+                }
+            }
+        }
+    
+        &:nth-child(2){
+            &::before{
+                background-image: url("../images/wear-icon.svg");
+            }
+            &:hover{
+                &::before{
+                    background-image: url("../images/wear-icon-white.svg");
+                }
+            }
+        }
+    
+        &:nth-child(3){
+            &::before{
+                background-image: url("../images/protocol-icon.svg");
+            }
+            &:hover{
+                &::before{
+                    background-image: url("../images/protocol-icon-white.svg");
+                }
+            }
+        }
+    }
+    .dark-mode .safe__item {
+        &:nth-child(1){
+            &::before{
+                background-image: url("../images/cleaned-icon-white.svg");
+            }
+        }
+    
+        &:nth-child(2){
+            &::before{
+                background-image: url("../images/wear-icon-white.svg");
+            }
+        }
+    
+        &:nth-child(3){
+            &::before{
+                background-image: url("../images/protocol-icon-white.svg");
+            }
+        }
+    }
+    .safe__itembox{
+        width: 100%;
+    }
+    .safe__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--main-text-color);    
+    }
+}
