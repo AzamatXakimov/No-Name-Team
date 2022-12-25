@@ -1,7 +1,6 @@
 .from-google {
   background-color: var(--card-bg-color);
-  padding: 20px 0px;
-  padding-top: 100px;
+  padding: 20px 0;
 }
 
 .google .slick-track {
@@ -449,6 +448,10 @@
 }
 
 @include mobile-first(960px) {
+    .from-google{
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
     .from-google__box{
         display: flex;
     }
