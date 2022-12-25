@@ -1,3 +1,343 @@
+// @import url("_visually-hidden.scss");
 /* HERO START */
+
+// .slick-list{
+//     overflow: hidden;
+// }
+
+.slick-list {
+  overflow: hidden;
+}
+// lenta slaydov
+.hero * .slick-track {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  // top: 50%;
+  z-index: 10;
+  bottom: 0;
+  // font-size: 0;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider .slick-arrow:hover {
+}
+.slider .slick-arrow:active {
+  background-color: #299764;
+}
+.slider .slick-arrow:focus {
+  outline: #fff;
+}
+
+.slider .slick-prev:focus {
+  outline: #fff;
+}
+
+.slider .slick-prev:hover {  
+  transform: rotate(180deg);
+  background-image: url("/images/Icon-dark.svg");
+}
+
+.slider .slick-prev:active {  
+  transform: rotate(180deg);
+  background-image: url("/images/Icon-hover.svg");
+}
+.slider .slick-next:hover {
+  background-image: url("/images/Icon-dark.svg");
+}
+.slider .slick-next:active {
+  background-image: url("/images/Icon-hover.svg");
+}
+.slider .slick-prev {
+  display: none !important;
+  right: 0;
+}
+
+.slider .slick-next {
+  display: none !important;
+  right: -34px;
+}
+.slider__item img {
+  margin: 0 !important;
+}
+
+.slider__item {
+  width: 100%;
+  height: 300px;
+  padding: 40px 35px !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 6.19%,
+    rgba(0, 0, 0, 0) 54.63%
+  );
+  background-image: url("/images/gelenwagen.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.slider__item:nth-child(2) {
+  background-image: url("/images/malibu-m.png");
+  background-size: cover;
+  background-position: center center;
+}
+.slider__item:nth-child(3) {
+  background-image: url("/images/vans.png");
+  background-size: cover;
+  background-position: center center;
+}
+.hero * .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  left: 0;
+  padding: 0;
+}
+
+.hero * .slick-dots:focus {
+  outline: var(--main-body-bg-color);
+}
+
+.hero * .slick-dots li {
+  list-style: none;
+}
+
+.hero * .slick-dots li button {
+  font-size: 0;
+  width: 5px;
+  height: 10px;
+  background-color: var(--main-body-bg-color);
+  border: none;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+.hero * .slick-dots li.slick-active button {
+  width: 30px;
+  opacity: 1;
+  background-color: var(--main-body-bg-color);
+  border-radius: 100px;
+}
+
+.slider__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+}
+.slider__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+br{
+    display: none;
+}
+@include bgRetinaImages {
+  .slider__item {
+    background-image: url("/images/gelenwagen@2x.png");
+  }
+
+  .slider__item:nth-child(2) {
+    background-image: url("/images/malibu-m@2x.png");
+  }
+  .slider__item:nth-child(3) {
+    background-image: url("/images/vans@2x.png");
+  }
+}
+
+@include mobile-first(510px) {
+  .slider__item {
+    background-image: url("/images/gelenwagen.png");
+    background-position: center bottom;
+  }
+
+  .slider__item:nth-child(2) {
+    background-image: url("/images/malibu-t.png");
+  }
+  .slider__item:nth-child(3) {
+    background-image: url("/images/vans.png");
+  }
+
+  .slider .slick-arrow {
+    bottom: 15px;
+    font-size: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .slider .slick-prev {
+    display: block !important;
+    right: 48px;
+    background-image: url("/images/Icon.svg");
+    transform: rotate(180deg);
+    background-size: 5px 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .slider .slick-next {
+    display: block !important;
+    right: 12px;
+    background-size: 5px 8px;
+    background-image: url("/images/Icon.svg");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .hero * .slick-dots {
+    bottom: 15px;
+    right: calc(50% + 130px);
+  }
+
+  @include bgRetinaImages {
+    .slider__item {
+      background-image: url("/images/gelenwagen@2x.png");
+    }
+
+    .slider__item:nth-child(2) {
+      background-image: url("/images/malibu-t@2x.png");
+    }
+    .slider__item:nth-child(3) {
+      background-image: url("/images/vans@2x.png");
+    }
+  }
+}
+
+@include mobile-first(660px) {
+
+    .slider__title {
+        margin-bottom: 9px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #ffffff;
+      }
+    
+      .slider__text {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    br{
+        display: block;
+    }
+  .slider__item {
+    height: 500px;
+    background-image: url("/images/gelenwagen.png");
+  }
+
+  .slider__item:nth-child(2) {
+    background-image: url("/images/malibu-t.png");
+    background-size: auto;
+  }
+  .slider__item:nth-child(3) {
+    background-image: url("/images/vans.png");
+  }
+
+  .hero * .slick-dots {
+    right: calc(50% + 190px);
+  }
+}
+
+@include mobile-first(800px) {
+  .slider__title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .slider__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .slider .slick-arrow {
+    bottom: 38px;
+    font-size: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .hero * .slick-dots {
+    right: calc(50% + 250px);
+    bottom: 44px;
+  }
+  br{
+    display: block;
+}
+
+.slider__item:nth-child(2) {
+    background-image: url("/images/malibu.png");
+    background-size: cover;
+  }
+  .slider .slick-arrow {
+    bottom: 38px;
+  }
+
+
+  .slider .slick-prev {
+    right: 90px;
+  }
+  
+  .slider .slick-next {
+    right: 48px;
+  }
+
+  @include bgRetinaImages {
+    .slider__item {
+      background-image: url("/images/gelenwagen@2x.png");
+    }
+
+    .slider__item:nth-child(2) {
+      background-image: url("/images/malibu2x.png");
+    }
+    .slider__item:nth-child(3) {
+      background-image: url("/images/vans@2x.png");
+    }
+  }
+
+}
+
+
 
 /* HERO END */
