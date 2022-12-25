@@ -6,6 +6,7 @@ $main-text-color: #000;
 $main-desc-color: #555;
 $site-main-color: #299764;
 $card-bg-color: #f5f5f5;
+$border-color:  #e5e7ea;
 /* ROOT */
 :root{
     --main-font-family: #{$main-font-family};
@@ -15,4 +16,5 @@ $card-bg-color: #f5f5f5;
     --main-desc-color: #{$main-desc-color};
     --site-main-color: #{$site-main-color};
     --card-bg-color: #{$card-bg-color};
+    --border-color: #{$border-color};
 }
