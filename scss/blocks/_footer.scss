@@ -1,3 +1,23 @@
 /* FOOTER START */
 
 /* FOOTER END */
+.footer-box__link-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-box__logo{
+    margin-bottom: 16px;
+}
+.footer-box__text{
+    font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+color: var(--main-desc-color);
+}
+.footer-box__strong{
+    font-size: 14px;
+line-height: 22px;
+
+color: var(--main-text-color);
+}
