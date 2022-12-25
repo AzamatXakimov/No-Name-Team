@@ -36,6 +36,7 @@
     color: var( --main-text-color);
   }
   .footer-list {
+    @include list-rest()
   }
   .footer-list__item {
     margin-bottom: 16px;
