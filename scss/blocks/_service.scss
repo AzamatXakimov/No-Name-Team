@@ -2,8 +2,6 @@
   padding-bottom: 100px;
 }
 
-.service__wrap {
-}
 .service__title-box {
   width: 100%;
   max-width: 684px;
@@ -15,7 +13,7 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #000000;
+  color: var(--main-text-color);
 }
 .service__text {
   margin: 0px;
@@ -28,8 +26,7 @@
 .service__service-list {
   @include list-rest;
 }
-.service-list {
-}
+
 .service-list__item {
   position: relative;
   width: 100%;
@@ -42,21 +39,22 @@
     position: absolute;
     top: 36px;
     right: 15px;
-    width: 33px;
-    height: 28px;
-    background-image: url("../../images/book-icon.svg");
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/book-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     content: "";
   }
   &:nth-child(2)::after {
-    background-image: url("../../images/guaranted-icon.svg");
+    background-image: url("../images/guaranted-icon.svg");
   }
   &:nth-child(3)::after {
-    background-image: url("../../images/unparalleled-icon.svg");
+    background-size: contain;
+    background-image: url("../images/unparalleled-icon.svg");
   }
   &:nth-child(4)::after {
-    background-image: url("../../images/fees-icon.svg");
+    background-image: url("../images/fees-icon.svg");
   }
   &:hover {
     background-color: #299764;
@@ -68,16 +66,16 @@
     color: #fff;
   }
   &:hover::after {
-    background-image: url("../../images/book-icon-white.svg");
+    background-image: url("../images/book-icon-white.svg");
   }
   &:hover:nth-child(2)::after {
-    background-image: url("../../images/guaranted-icon-white.svg");
+    background-image: url("../images/guaranted-icon-white.svg");
   }
   &:hover:nth-child(3)::after {
-    background-image: url("../../images/unparalleled-icon-white.svg");
+    background-image: url("../images/unparalleled-icon-white.svg");
   }
   &:hover:nth-child(4)::after {
-    background-image: url("../../images/fees-icon-white.svg");
+    background-image: url("../images/fees-icon-white.svg");
   }
 }
 
@@ -160,7 +158,7 @@
     margin-bottom: 40px;
   }
 }
-@include mobile-first(1120px) {
+@include mobile-first(1200px) {
   .service-list {
     width: 100%;
   }

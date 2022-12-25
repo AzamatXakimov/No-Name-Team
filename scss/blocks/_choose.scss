@@ -83,18 +83,34 @@
     color: #fff;
   }
   &:hover .choose-wrap__info::before{
-    background-image: url("../../images/seats-icon-white.svg");
+    background-image: url("../images/seats-icon-white.svg");
   }
   &:hover .choose-wrap__info:nth-child(2)::before{
-    background-image: url("../../images/years-icon-white.svg");
+    background-image: url("../images/years-icon-white.svg");
   }
   &:hover .choose-wrap__box-years .choose-wrap__info::before{
-    background-image: url("../../images/authomatic-icon-white.svg");
+    background-image: url("../images/authomatic-icon-white.svg");
   }
   &:hover .choose-wrap__box-years .choose-wrap__info:nth-child(2)::before{
-    background-image: url("../../images/lit-icon-white.svg");
+    background-image: url("../images/lit-icon-white.svg");
   }
 }
+
+.dark-mode .choose-wrap__info{
+  &::before{
+    background-image: url("../images/seats-icon-white.svg");
+  }
+  &:nth-child(2)::before{
+    background-image: url("../images/years-icon-white.svg");
+  }
+}
+.dark-mode .choose-wrap__box-years .choose-wrap__info::before{
+  background-image: url("../images/authomatic-icon-white.svg");
+}
+.dark-mode .choose-wrap__box-years .choose-wrap__info:nth-child(2)::before{
+  background-image: url("../images/lit-icon-white.svg");
+}
+
 .choose-wrap__title {
   margin: 0px 0px 8px 0px;
   font-weight: 600;
@@ -130,7 +146,7 @@
   width: 13px;
   height: 14px;
   margin-right: 16px;
-  background-image: url("../../images/seats-icon.svg");
+  background-image: url("../images/seats-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -139,16 +155,16 @@
   margin: 0px;
 }
 .choose-wrap__info:nth-child(2)::before {
-  background-image: url("../../images/years-icon.svg");
+  background-image: url("../images/years-icon.svg");
 }
 .choose-wrap__box-years .choose-wrap__info::before {
-  background-image: url("../../images/authomatic-icon.svg");
+  background-image: url("../images/authomatic-icon.svg");
 }
 .choose-wrap__box-years .choose-wrap__info:nth-child(2) {
   margin: 0px;
 }
 .choose-wrap__box-years .choose-wrap__info:nth-child(2)::before {
-  background-image: url("../../images/lit-icon.svg");
+  background-image: url("../images/lit-icon.svg");
 }
 .choose-wrap__btn {
   display: block;
