@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 let count=1
 if (window.screen.width==830) {
-     count=2
+    count=2
 }
 
 $(document).ready(function () {
@@ -128,7 +128,103 @@ const elModalCloseBtn = document.querySelector(".js-login-modal-close");
 const elModalPasswordIput =document.querySelector(".js-password-input");
 const elModalPasswordShowBtn = document.querySelector(".js-show-password-btn")
 
-    
+
+// BRAND IMAGES
+const elBrandLsit = document.querySelector(".js-brand-list");
+const elBrandTemp = document.querySelector(".js-brand-template").content;
+
+const brandImgArr = [
+  {
+    url:"./images/ford.png",
+    retina: "./images/ford.png 1x, ./images/ford@2x.png 2x",
+    alt: "Ford" 
+  },
+  {
+    url:"./images/nissan.png",
+    retina: "./images/nissan.png 1x, ./images/nissan@2x.png 2x",
+    alt: "Nissan" 
+  },
+  {
+    url:"./images/toyota.png",
+    retina: "./images/toyota.png 1x, ./images/toyota@2x.png 2",
+    alt: "Toyota" 
+  },
+  {
+    url:"./images/dodge.png",
+    retina: "./images/dodge.png 1x, ./images/dodge@2x.png 2x",
+    alt: "Dodge" 
+  },
+  {
+    url:"./images/hyundai.png",
+    retina: "./images/hyundai.png 1x, ./images/hyundai@2x.png 2x",
+    alt: "Hyundai" 
+  },
+  {
+    url:"./images/jeep.png",
+    retina: "./images/jeep.png 1x, ./images/jeep@2x.png 2x",
+    alt: "Jeep" 
+  },
+]
+const brandImgArrLight = [
+  {
+    url:"./images/ford-white.png",
+    retina: "./images/ford-white.png 1x, ./images/ford-white@2x.png 2x",
+    alt: "Ford" 
+  },
+  {
+    url:"./images/nissan-white.png",
+    retina: "./images/nissan-white.png 1x, ./images/nissan-white@2x.png 2x",
+    alt: "Nissan" 
+  },
+  {
+    url:"./images/toyota-white.png",
+    retina: "./images/toyota-white.png 1x, ./images/toyota-white@2x.png 2",
+    alt: "Toyota" 
+  },
+  {
+    url:"./images/dodge-white.png",
+    retina: "./images/dodge-white.png 1x, ./images/dodge-white@2x.png 2x",
+    alt: "Dodge" 
+  },
+  {
+    url:"./images/hyundai-white.png",
+    retina: "./images/hyundai-white.png 1x, ./images/hyundai-white@2x.png 2x",
+    alt: "Hyundai" 
+  },
+  {
+    url:"./images/jeep-white.png",
+    retina: "./images/jeep-white.png 1x, ./images/jeep-white@2x.png 2x",
+    alt: "Jeep" 
+  },
+]
+
+const renderBrandImg = () => {
+  elBrandLsit.innerHTML = "";
+  const elBrandFrag = new DocumentFragment()
+  if(localStorage.getItem("theme") == "light"){
+    brandImgArr.forEach(item => {
+      const elBrandTempClone = elBrandTemp.cloneNode(true)
+      
+      elBrandTempClone.querySelector(".js-brand-img").src = item.url;
+      elBrandTempClone.querySelector(".js-brand-img").alt = item.alt;
+      elBrandTempClone.querySelector(".js-brand-img").srcset = item.retina;
+      elBrandFrag.appendChild(elBrandTempClone)
+    })
+  }
+  else{
+    brandImgArrLight.forEach(item => {
+      const elBrandTempClone = elBrandTemp.cloneNode(true)
+      
+      elBrandTempClone.querySelector(".js-brand-img").src = item.url;
+      elBrandTempClone.querySelector(".js-brand-img").alt = item.alt;
+      elBrandTempClone.querySelector(".js-brand-img").srcset = item.retina;
+      elBrandFrag.appendChild(elBrandTempClone)
+    })
+  }
+  elBrandLsit.appendChild(elBrandFrag)
+}
+renderBrandImg()
+
 if(theme == "dark"){
     document.body.classList.add("dark-mode")
 }
@@ -153,7 +249,7 @@ themeBtn.addEventListener("click", () => {
     else{
         localStorage.setItem("theme", "dark")
     }
-
+    renderBrandImg()
     document.body.classList.toggle("dark-mode");
 });
 

@@ -1,1032 +1,855 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/main.min.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Header start -->
     <!-- Header start -->
     <header class="site-header">
-      <div class="container">
-        <div class="site-header__inner">
-          <a class="logo" href="./index.html">
-            <img
-              class="logo__img"
-              src="./images/logo-m.png"
-              width="150"
-              height="40"
-              srcset="./images/logo-m.png 1x, ./images/logo-m@2x.png 2x"
-              alt="Site Logo" />
-          </a>
-
-          <button
-            class="site-header__navbtn site-header__navbtn--open js-navbar-open-btn"></button>
-
-          <nav class="site-header__navbar js-navbar">
-            <div class="site-header__navinner">
-              <div class="site-header__navtop">
+        <div class="container">
+            <div class="site-header__inner">
                 <a class="logo" href="./index.html">
-                  <img
-                    class="logo__img"
-                    src="./images/logo-m.png"
-                    width="150"
-                    height="40"
-                    srcset="./images/logo-m.png 1x, ./images/logo-m@2x.png 2x"
-                    alt="Site Logo" />
+                    <img class="logo__img" src="./images/logo-m.png" width="150" height="40"
+                        srcset="./images/logo-m.png 1x, ./images/logo-m@2x.png 2x" alt="Site Logo" />
                 </a>
 
-                <button
-                  class="site-header__navbtn site-header__navbtn--close js-navbar-close-btn"></button>
-              </div>
+                <button class="site-header__navbtn site-header__navbtn--open js-navbar-open-btn"></button>
 
-              <ul class="site-header__list">
-                <li class="site-header__item">
-                  <a class="site-header__link" href="#"> Categories </a>
-                </li>
-                <li class="site-header__item">
-                  <a class="site-header__link site-header__link--list" href="#">
-                    About Us
-                  </a>
-                  <ul class="site-header__innerlist">
-                    <li class="site-header__inneritem">
-                      <a class="site-header__innerlink" href="#"> News </a>
-                    </li>
-                    <li class="site-header__inneritem">
-                      <a class="site-header__innerlink" href="#"> Careers </a>
-                    </li>
-                    <li class="site-header__inneritem">
-                      <a class="site-header__innerlink" href="#"> Locations </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="site-header__item">
-                  <a class="site-header__link site-header__link--list" href="#">
-                    Help center
-                  </a>
-                  <ul class="site-header__innerlist">
-                    <li class="site-header__inneritem">
-                      <a class="site-header__innerlink" href="#"> FAQ </a>
-                    </li>
-                    <li class="site-header__inneritem">
-                      <a class="site-header__innerlink" href="#">
-                        Contact us
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                <nav class="site-header__navbar js-navbar">
+                    <div class="site-header__navinner">
+                        <div class="site-header__navtop">
+                            <a class="logo" href="./index.html">
+                                <img class="logo__img" src="./images/logo-m.png" width="150" height="40"
+                                    srcset="./images/logo-m.png 1x, ./images/logo-m@2x.png 2x" alt="Site Logo" />
+                            </a>
 
-              <div class="site-header__box">
-                <a class="site-header__numberlink" href="tel:18554200000"
-                  >+1 855 420 0000</a
-                >
-                <div class="site-header__btnbox">
-                  <button
-                    class="site-header__themebtn js-theme-btn"
-                    type="button">
-                    <svg
-                      class="site-header__themeiconlight"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="none">
-                      <path
-                        fill="currentColor"
-                        d="M8 .208a7.792 7.792 0 1 0 7.756 8.544.458.458 0 0 0-.745-.4 4.583 4.583 0 1 1-5.626-7.235.458.458 0 0 0-.206-.82A7.85 7.85 0 0 0 8 .208Z" />
-                    </svg>
-                    <svg
-                      class="site-header__themeicondark"
-                      width="20"
-                      height="20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M10 .146c.38 0 .688.308.688.687v.917a.688.688 0 0 1-1.376 0V.833c0-.38.308-.687.688-.687ZM10 4.73a5.27 5.27 0 1 0 0 10.54 5.27 5.27 0 0 0 0-10.54ZM4.004 3.032a.688.688 0 0 0-.972.972l.648.648a.687.687 0 1 0 .972-.972l-.648-.648ZM19.854 10c0 .38-.308.687-.687.687h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM16.968 4.004a.687.687 0 1 0-.972-.972l-.649.648a.687.687 0 0 0 .973.972l.648-.648ZM10 17.562c.38 0 .688.308.688.688v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.688.688-.688ZM16.32 15.347a.688.688 0 1 0-.973.973l.649.648a.688.688 0 0 0 .972-.972l-.648-.649ZM2.437 10c0 .38-.307.687-.687.687H.833a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM4.652 16.32a.688.688 0 0 0-.972-.973l-.648.649a.688.688 0 0 0 .972.972l.648-.648Z"
-                        fill="#fff" />
-                    </svg>
-                  </button>
-                  <button class="login-btn js-login-btn" type="button">
-                    Login
-                  </button>
-                </div>
-              </div>
+                            <button class="site-header__navbtn site-header__navbtn--close js-navbar-close-btn"></button>
+                        </div>
+
+                        <ul class="site-header__list">
+                            <li class="site-header__item">
+                                <a class="site-header__link" href="#"> Categories </a>
+                            </li>
+                            <li class="site-header__item">
+                                <a class="site-header__link site-header__link--list" href="#">
+                                    About Us
+                                </a>
+                                <ul class="site-header__innerlist">
+                                    <li class="site-header__inneritem">
+                                        <a class="site-header__innerlink" href="#"> News </a>
+                                    </li>
+                                    <li class="site-header__inneritem">
+                                        <a class="site-header__innerlink" href="#"> Careers </a>
+                                    </li>
+                                    <li class="site-header__inneritem">
+                                        <a class="site-header__innerlink" href="#"> Locations </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="site-header__item">
+                                <a class="site-header__link site-header__link--list" href="#">
+                                    Help center
+                                </a>
+                                <ul class="site-header__innerlist">
+                                    <li class="site-header__inneritem">
+                                        <a class="site-header__innerlink" href="#"> FAQ </a>
+                                    </li>
+                                    <li class="site-header__inneritem">
+                                        <a class="site-header__innerlink" href="#">
+                                            Contact us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="site-header__box">
+                            <a class="site-header__numberlink" href="tel:18554200000">+1 855 420 0000</a>
+                            <div class="site-header__btnbox">
+                                <button class="site-header__themebtn js-theme-btn" type="button">
+                                    <svg class="site-header__themeiconlight" xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="none">
+                                        <path fill="currentColor"
+                                            d="M8 .208a7.792 7.792 0 1 0 7.756 8.544.458.458 0 0 0-.745-.4 4.583 4.583 0 1 1-5.626-7.235.458.458 0 0 0-.206-.82A7.85 7.85 0 0 0 8 .208Z" />
+                                    </svg>
+                                    <svg class="site-header__themeicondark" width="20" height="20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 .146c.38 0 .688.308.688.687v.917a.688.688 0 0 1-1.376 0V.833c0-.38.308-.687.688-.687ZM10 4.73a5.27 5.27 0 1 0 0 10.54 5.27 5.27 0 0 0 0-10.54ZM4.004 3.032a.688.688 0 0 0-.972.972l.648.648a.687.687 0 1 0 .972-.972l-.648-.648ZM19.854 10c0 .38-.308.687-.687.687h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM16.968 4.004a.687.687 0 1 0-.972-.972l-.649.648a.687.687 0 0 0 .973.972l.648-.648ZM10 17.562c.38 0 .688.308.688.688v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.688.688-.688ZM16.32 15.347a.688.688 0 1 0-.973.973l.649.648a.688.688 0 0 0 .972-.972l-.648-.649ZM2.437 10c0 .38-.307.687-.687.687H.833a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM4.652 16.32a.688.688 0 0 0-.972-.973l-.648.649a.688.688 0 0 0 .972.972l.648-.648Z"
+                                            fill="#fff" />
+                                    </svg>
+                                </button>
+                                <button class="login-btn js-login-btn" type="button">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </nav>
         </div>
-      </div>
     </header>
     <!-- Header finish -->
     <!-- Header finish -->
 
     <!-- Main start -->
     <main class="site-main">
-      <!-- Hero section start  -->
-      <section class="hero">
-        <div class="container">
-          <div class="hero__slider">
-            <div>
-              <ul class="slider">
-                <li class="slider__item">
-                  <h2 class="slider__title">Compact cars</h2>
-                  <p class="slider__text">
-                    Rent cars as you are comfortable and where you are <br />
-                    comfortable.
-                  </p>
-                </li>
-                <li class="slider__item">
-                  <h2 class="slider__title">Sports cars</h2>
-                  <p class="slider__text">
-                    Rent cars as you are comfortable and where you are<br />
-                    comfortable.
-                  </p>
-                </li>
-                <li class="slider__item">
-                  <h2 class="slider__title">Vans</h2>
-                  <p class="slider__text">
-                    Rent cars as you are comfortable and where you are<br />
-                    comfortable.
-                  </p>
-                </li>
-              </ul>
+        <!-- Hero section start  -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__slider">
+                    <div>
+                        <ul class="slider">
+                            <li class="slider__item">
+                                <h2 class="slider__title">Compact cars</h2>
+                                <p class="slider__text">
+                                    Rent cars as you are comfortable and where you are <br />
+                                    comfortable.
+                                </p>
+                            </li>
+                            <li class="slider__item">
+                                <h2 class="slider__title">Sports cars</h2>
+                                <p class="slider__text">
+                                    Rent cars as you are comfortable and where you are<br />
+                                    comfortable.
+                                </p>
+                            </li>
+                            <li class="slider__item">
+                                <h2 class="slider__title">Vans</h2>
+                                <p class="slider__text">
+                                    Rent cars as you are comfortable and where you are<br />
+                                    comfortable.
+                                </p>
+                            </li>
+                        </ul>
 
-              <form
-                class="hero-form"
-                action="https://echo.htmlacademy.ru/"
-                autocomplete="off">
-                <div class="hero-form__label">
-                  <input
-                    class="hero-form__input"
-                    type="text"
-                    aria-label="Find the car of your dreams"
-                    placeholder="Find the car of your dreams" />
-                  <button class="hero-form__btn"></button>
+                        <form class="hero-form" action="https://echo.htmlacademy.ru/" autocomplete="off">
+                            <div class="hero-form__label">
+                                <input class="hero-form__input" type="text" aria-label="Find the car of your dreams"
+                                    placeholder="Find the car of your dreams" />
+                                <button class="hero-form__btn"></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- Hero section finish  -->
+        </section>
+        <!-- Hero section finish  -->
 
-      <!-- SECTION CHOOSE START -->
-      <section class="choose">
-        <div class="container">
-          <div class="choose__box">
-            <div class="choose__title-wrap">
-              <div class="choose__title-box">
-                <h2 class="choose__title">
-                  Choose the <br class="choose__title-br" />
-                  car of your dreams
-                </h2>
-              </div>
-              <p class="choose__text">
-                We provide our customers with the most incredible driving
-                emotions. <br />
-                That is why there are only world-class cars in our fleet
-              </p>
-            </div>
-            <ul class="choose__choose-list choose-list">
-              <li class="choose-list__item choose-list__item--active">
-                <a
-                  class="choose-list__link choose-list__link--active"
-                  href="#compact"
-                  >Compact</a
-                >
-              </li>
-              <li class="choose-list__item">
-                <a class="choose-list__link" href="#sports">Sports cars</a>
-              </li>
-              <li class="choose-list__item">
-                <a class="choose-list__link" href="#vans">Vans</a>
-              </li>
-            </ul>
-            <div class="choose__choose-wrap choose-wrap">
-              <div
-                class="choose-wrap__wrapper choose-wrap__wrapper--active"
-                id="compact">
-                <div class="choose-wrap__box">
-                  <ul class="choose-wrap__list">
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Ford Fiesta</h3>
-                      <p class="choose-wrap__text">Economy Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/fiesta-d.png"
-                        srcset="
+        <!-- SECTION CHOOSE START -->
+        <section class="choose">
+            <div class="container">
+                <div class="choose__box">
+                    <div class="choose__title-wrap">
+                        <div class="choose__title-box">
+                            <h2 class="choose__title">
+                                Choose the <br class="choose__title-br" />
+                                car of your dreams
+                            </h2>
+                        </div>
+                        <p class="choose__text">
+                            We provide our customers with the most incredible driving
+                            emotions. <br />
+                            That is why there are only world-class cars in our fleet
+                        </p>
+                    </div>
+                    <ul class="choose__choose-list choose-list">
+                        <li class="choose-list__item choose-list__item--active">
+                            <a class="choose-list__link choose-list__link--active" href="#compact">Compact</a>
+                        </li>
+                        <li class="choose-list__item">
+                            <a class="choose-list__link" href="#sports">Sports cars</a>
+                        </li>
+                        <li class="choose-list__item">
+                            <a class="choose-list__link" href="#vans">Vans</a>
+                        </li>
+                    </ul>
+                    <div class="choose__choose-wrap choose-wrap">
+                        <div class="choose-wrap__wrapper choose-wrap__wrapper--active" id="compact">
+                            <div class="choose-wrap__box">
+                                <ul class="choose-wrap__list">
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Ford Fiesta</h3>
+                                        <p class="choose-wrap__text">Economy Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/fiesta-d.png" srcset="
                           ./images/fiesta-d.png    1x,
                           ./images/fiesta-d@2x.png 2x
-                        "
-                        alt="Fiesta car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Nissan Versa</h3>
-                      <p class="choose-wrap__text">Compact Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/versa-d.png"
-                        srcset="
+                        " alt="Fiesta car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Nissan Versa</h3>
+                                        <p class="choose-wrap__text">Compact Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/versa-d.png" srcset="
                           ./images/versa-d.png    1x,
                           ./images/versa-d@2x.png 2x
-                        "
-                        alt="Versa car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Toyota Corolla</h3>
-                      <p class="choose-wrap__text">Mid-size Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/corolla-d.png"
-                        srcset="
+                        " alt="Versa car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Toyota Corolla</h3>
+                                        <p class="choose-wrap__text">Mid-size Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/corolla-d.png" srcset="
                           ./images/corolla-d.png    1x,
                           ./images/corolla-d@2x.png 2x
-                        "
-                        alt="Corolla car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Nissan Rogue</h3>
-                      <p class="choose-wrap__text">Mid-size SUV</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/rogue-d.png"
-                        srcset="
+                        " alt="Corolla car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Nissan Rogue</h3>
+                                        <p class="choose-wrap__text">Mid-size SUV</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/rogue-d.png" srcset="
                           ./images/rogue-d.png    1x,
                           ./images/rogue-d@2x.png 2x
-                        "
-                        alt="Rogue car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Chevy Traverse</h3>
-                      <p class="choose-wrap__text">Full-size SUV</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/traverse-d.png"
-                        srcset="
+                        " alt="Rogue car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Chevy Traverse</h3>
+                                        <p class="choose-wrap__text">Full-size SUV</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/traverse-d.png" srcset="
                           ./images/traverse-d.png    1x,
                           ./images/traverse-d@2x.png 2x
-                        "
-                        alt="Traverse car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Nissan Altima</h3>
-                      <p class="choose-wrap__text">Full-size SUV</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/altima-d.png"
-                        srcset="
+                        " alt="Traverse car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Nissan Altima</h3>
+                                        <p class="choose-wrap__text">Full-size SUV</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/altima-d.png" srcset="
                           ./images/altima-d.png    1x,
                           ./images/altima-d@2x.png 2x
-                        "
-                        alt="Altima car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
+                        " alt="Altima car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="choose-wrap__btn">View all cars</button>
+                            </div>
                         </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <button class="choose-wrap__btn">View all cars</button>
-                </div>
-              </div>
-              <div class="choose-wrap__wrapper" id="sports">
-                <div class="choose-wrap__box">
-                  <ul class="choose-wrap__list">
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Royce rolls ghost</h3>
-                      <p class="choose-wrap__text">Full-size Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/ghost.png"
-                        srcset="./images/ghost.png 1x, ./images/ghost@2x.png 2x"
-                        alt="Rolls Royce car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Mercedes s class</h3>
-                      <p class="choose-wrap__text">Full-size Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/mercedes.png"
-                        srcset="
+                        <div class="choose-wrap__wrapper" id="sports">
+                            <div class="choose-wrap__box">
+                                <ul class="choose-wrap__list">
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Royce rolls ghost</h3>
+                                        <p class="choose-wrap__text">Full-size Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254" src="./images/ghost.png"
+                                            srcset="./images/ghost.png 1x, ./images/ghost@2x.png 2x"
+                                            alt="Rolls Royce car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Mercedes s class</h3>
+                                        <p class="choose-wrap__text">Full-size Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/mercedes.png" srcset="
                           ./images/mercedes.png    1x,
                           ./images/mercedes@2x.png 2x
-                        "
-                        alt="Mercedes car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
+                        " alt="Mercedes car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Lamborghini urus</h3>
+                                        <p class="choose-wrap__text">Mid-size Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254" src="./images/urus.png"
+                                            srcset="./images/urus.png 1x, ./images/urus@2x.png 2x" alt="Urus car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Mercedes g63 amg</h3>
+                                        <p class="choose-wrap__text">Mid-size SUV</p>
+                                        <img class="choose-wrap__img" width="358" height="254" src="./images/amg.png"
+                                            srcset="./images/amg.png 1x, ./images/amg@2x.png 2x" alt="Fiesta car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="choose-wrap__btn">View all cars</button>
+                            </div>
                         </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Lamborghini urus</h3>
-                      <p class="choose-wrap__text">Mid-size Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/urus.png"
-                        srcset="./images/urus.png 1x, ./images/urus@2x.png 2x"
-                        alt="Urus car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Mercedes g63 amg</h3>
-                      <p class="choose-wrap__text">Mid-size SUV</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/amg.png"
-                        srcset="./images/amg.png 1x, ./images/amg@2x.png 2x"
-                        alt="Fiesta car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <button class="choose-wrap__btn">View all cars</button>
-                </div>
-              </div>
-              <div class="choose-wrap__wrapper" id="vans">
-                <div class="choose-wrap__box">
-                  <ul class="choose-wrap__list">
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">
-                        15-Passenger Ford Transit
-                      </h3>
-                      <p class="choose-wrap__text">Full-size Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/transit.png"
-                        srcset="
+                        <div class="choose-wrap__wrapper" id="vans">
+                            <div class="choose-wrap__box">
+                                <ul class="choose-wrap__list">
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">
+                                            15-Passenger Ford Transit
+                                        </h3>
+                                        <p class="choose-wrap__text">Full-size Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/transit.png" srcset="
                           ./images/transit.png    1x,
                           ./images/transit@2x.png 2x
-                        "
-                        alt="Passenger car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Chrysler Pacifica</h3>
-                      <p class="choose-wrap__text">Full-size Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/pacifica.png"
-                        srcset="
+                        " alt="Passenger car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Chrysler Pacifica</h3>
+                                        <p class="choose-wrap__text">Full-size Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/pacifica.png" srcset="
                           ./images/pacifica.png    1x,
                           ./images/pacifica@2x.png 2x
-                        "
-                        alt="Pacifica car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Chevy Silverado 4500HD</h3>
-                      <p class="choose-wrap__text">Mid-size Car</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/silverado.png"
-                        srcset="
+                        " alt="Pacifica car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Chevy Silverado 4500HD</h3>
+                                        <p class="choose-wrap__text">Mid-size Car</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/silverado.png" srcset="
                           ./images/silverado.png    1x,
                           ./images/silverado@2x.png 2x
-                        "
-                        alt="Silverado car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">
-                        12-Passenger Ford Transit
-                      </h3>
-                      <p class="choose-wrap__text">Mid-size SUV</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/12transit.png"
-                        srcset="
+                        " alt="Silverado car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">
+                                            12-Passenger Ford Transit
+                                        </h3>
+                                        <p class="choose-wrap__text">Mid-size SUV</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/12transit.png" srcset="
                           ./images/12transit.png    1x,
                           ./images/12transit@2x.png 2x
-                        "
-                        alt="12transit car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">
-                        15-Passenger Ford Transit
-                      </h3>
-                      <p class="choose-wrap__text">Mid-size SUV</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/15transit.png"
-                        srcset="
+                        " alt="12transit car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">
+                                            15-Passenger Ford Transit
+                                        </h3>
+                                        <p class="choose-wrap__text">Mid-size SUV</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/15transit.png" srcset="
                           ./images/15transit.png    1x,
                           ./images/15transit@2x.png 2x
-                        "
-                        alt="15transit car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
-                        </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="choose-wrap__item">
-                      <h3 class="choose-wrap__title">Mercedes-Benz Sprinter</h3>
-                      <p class="choose-wrap__text">Mid-size SUV</p>
-                      <img
-                        class="choose-wrap__img"
-                        width="358"
-                        height="254"
-                        src="./images/sprinter.png"
-                        srcset="
+                        " alt="15transit car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="choose-wrap__item">
+                                        <h3 class="choose-wrap__title">Mercedes-Benz Sprinter</h3>
+                                        <p class="choose-wrap__text">Mid-size SUV</p>
+                                        <img class="choose-wrap__img" width="358" height="254"
+                                            src="./images/sprinter.png" srcset="
                           ./images/sprinter.png    1x,
                           ./images/sprinter@2x.png 2x
-                        "
-                        alt="Sprinter car" />
-                      <div class="choose-wrap__box-info">
-                        <div class="choose-wrap__box-seats">
-                          <p class="choose-wrap__info">5 Seats</p>
-                          <p class="choose-wrap__info">21+ Years</p>
+                        " alt="Sprinter car" />
+                                        <div class="choose-wrap__box-info">
+                                            <div class="choose-wrap__box-seats">
+                                                <p class="choose-wrap__info">5 Seats</p>
+                                                <p class="choose-wrap__info">21+ Years</p>
+                                            </div>
+                                            <div class="choose-wrap__box-years">
+                                                <p class="choose-wrap__info">Automatic</p>
+                                                <p class="choose-wrap__info">1-lit / 2.5 km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="choose-wrap__btn">View all cars</button>
+                            </div>
                         </div>
-                        <div class="choose-wrap__box-years">
-                          <p class="choose-wrap__info">Automatic</p>
-                          <p class="choose-wrap__info">1-lit / 2.5 km</p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <button class="choose-wrap__btn">View all cars</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION CHOOSE END -->
-
-      <!-- from goggle slider start -->
-
-      <section class="from-google google">
-        <div class="container">
-          <div class="from-google__box">
-            <div class="from-google__top-from">
-              <div class="from-google__top-from-text">
-                <a class="from-google__top-text" href="https://www.google.com/"
-                  >From Google</a
-                >
-                <h3 class="from-google__title">
-                  Hear what the community is saying
-                </h3>
-              </div>
-
-              <div class="from-google__top-instagram">
-                <p class="from-google__top-instagram-text">
-                  More interesting reviews on Instagram
-                </p>
-                <button class="from-google__top-instagram-btn">
-                  <p class="from-google__top-instagram-btn-text">Instagram</p>
-                </button>
-              </div>
-            </div>
-
-            <ul class="from-google__slider">
-              <li class="from-google__item">
-                <div class="from-google__top">
-                  <div class="from-google__top-box">
-                    <img
-                      class="from-google__item-img"
-                      src="./images/nguyen.png"
-                      srcset="./images/nguyen.png 1x, ./images/nguyen@2x.png 2x"
-                      alt="nguyen" />
-                    <div class="from-google__info-box">
-                      <p class="from-google__user-name">Savannah Nguyen</p>
-                      <a
-                        class="from-google__user-email"
-                        href="mailto:savannahnguyen@gmail.com"
-                        >savannahnguyen@gmail.com</a
-                      >
                     </div>
-                  </div>
-                  <div class="from-google__text-box">
-                    <p class="from-google__text">
-                      Sagittis sed tortor, elementum vitae varius sodales
-                      consectetur. Vitae arcu ut morbi bibendum ullamcorper
-                      feugiat. Venenatis hendrerit cursus egestas sit ornare
-                      nunc vulputate aliquam sapien. Pulvinar nunc consectetur
-                      nibh consectetur mollis mauris est mauris amet. Sed hac
-                      vehicula id et dui morbi quam pulvinar condimentum.
-                      Senectus sed varius interdum nunc, arcu vulputate massa.
-                    </p>
-                  </div>
                 </div>
+            </div>
+        </section>
+        <!-- SECTION CHOOSE END -->
 
-                <div class="from-google__starts-box">
-                  <p class="from-google__start-text">Star rating:</p>
-                  <ul class="from-google__starts">
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="from-google__item">
-                <div class="from-google__top">
-                  <div class="from-google__top-box">
-                    <img
-                      class="from-google__item-img"
-                      src="./images/richards.png"
-                      srcset="
+        <!-- from goggle slider start -->
+
+        <section class="from-google google">
+            <div class="container">
+                <div class="from-google__box">
+                    <div class="from-google__top-from">
+                        <div class="from-google__top-from-text">
+                            <a class="from-google__top-text" href="https://www.google.com/">From Google</a>
+                            <h3 class="from-google__title">
+                                Hear what the community is saying
+                            </h3>
+                        </div>
+
+                        <div class="from-google__top-instagram">
+                            <p class="from-google__top-instagram-text">
+                                More interesting reviews on Instagram
+                            </p>
+                            <button class="from-google__top-instagram-btn">
+                                <p class="from-google__top-instagram-btn-text">Instagram</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <ul class="from-google__slider">
+                        <li class="from-google__item">
+                            <div class="from-google__top">
+                                <div class="from-google__top-box">
+                                    <img class="from-google__item-img" src="./images/nguyen.png"
+                                        srcset="./images/nguyen.png 1x, ./images/nguyen@2x.png 2x" alt="nguyen" />
+                                    <div class="from-google__info-box">
+                                        <p class="from-google__user-name">Savannah Nguyen</p>
+                                        <a class="from-google__user-email"
+                                            href="mailto:savannahnguyen@gmail.com">savannahnguyen@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="from-google__text-box">
+                                    <p class="from-google__text">
+                                        Sagittis sed tortor, elementum vitae varius sodales
+                                        consectetur. Vitae arcu ut morbi bibendum ullamcorper
+                                        feugiat. Venenatis hendrerit cursus egestas sit ornare
+                                        nunc vulputate aliquam sapien. Pulvinar nunc consectetur
+                                        nibh consectetur mollis mauris est mauris amet. Sed hac
+                                        vehicula id et dui morbi quam pulvinar condimentum.
+                                        Senectus sed varius interdum nunc, arcu vulputate massa.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="from-google__starts-box">
+                                <p class="from-google__start-text">Star rating:</p>
+                                <ul class="from-google__starts">
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="from-google__item">
+                            <div class="from-google__top">
+                                <div class="from-google__top-box">
+                                    <img class="from-google__item-img" src="./images/richards.png" srcset="
                         ./images/richards.png    1x,
                         ./images/richards@2x.png 2x
-                      "
-                      alt="nguyen" />
-                    <div class="from-google__info-box">
-                      <p class="from-google__user-name">Ronald Richards</p>
-                      <a
-                        class="from-google__user-email"
-                        href="mailto:ronaldrichards@gmail.com"
-                        >ronaldrichards@gmail.com</a
-                      >
-                    </div>
-                  </div>
-                  <div class="from-google__text-box">
-                    <p class="from-google__text">
-                      Placerat pulvinar in amet sem id gravida nisi leo. A
-                      dignissim est pellentesque mi quisque vel mi ut. Porttitor
-                      blandit auctor odio a ornare felis tortor bibendum
-                      molestie.
-                    </p>
-                  </div>
+                      " alt="nguyen" />
+                                    <div class="from-google__info-box">
+                                        <p class="from-google__user-name">Ronald Richards</p>
+                                        <a class="from-google__user-email"
+                                            href="mailto:ronaldrichards@gmail.com">ronaldrichards@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="from-google__text-box">
+                                    <p class="from-google__text">
+                                        Placerat pulvinar in amet sem id gravida nisi leo. A
+                                        dignissim est pellentesque mi quisque vel mi ut. Porttitor
+                                        blandit auctor odio a ornare felis tortor bibendum
+                                        molestie.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="from-google__starts-box">
+                                <p class="from-google__start-text">Star rating:</p>
+                                <ul class="from-google__starts">
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item yarm-start"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="from-google__item">
+                            <div class="from-google__top">
+                                <div class="from-google__top-box">
+                                    <img class="from-google__item-img" src="./images/watson.png"
+                                        srcset="./images/watson.png 1x, ./images/watson@2x.png 2x" alt="nguyen" />
+                                    <div class="from-google__info-box">
+                                        <p class="from-google__user-name">Kristin Watson</p>
+                                        <a class="from-google__user-email"
+                                            href="kristinwatson@gmail.com">kristinwatson@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="from-google__text-box">
+                                    <p class="from-google__text">
+                                        Id adipiscing vulputate arcu pretium dignissim. Felis
+                                        vulputate tellus velit consectetur. Congue convallis
+                                        aliquam eget ullamcorper quam pellentesque cursus.
+                                        Dictumst mauris ac, quis orci morbi ultrices faucibus
+                                        volutpat mauris. Bibendum sed ut lectus facilisi amet
+                                        orci. Interdum massa orci urna id ac cras arcu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="from-google__starts-box">
+                                <p class="from-google__start-text">Star rating:</p>
+                                <ul class="from-google__starts">
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                    <li class="from-google__starts-item"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="from-google__starts-box">
-                  <p class="from-google__start-text">Star rating:</p>
-                  <ul class="from-google__starts">
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item yarm-start"></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="from-google__item">
-                <div class="from-google__top">
-                  <div class="from-google__top-box">
-                    <img
-                      class="from-google__item-img"
-                      src="./images/watson.png"
-                      srcset="./images/watson.png 1x, ./images/watson@2x.png 2x"
-                      alt="nguyen" />
-                    <div class="from-google__info-box">
-                      <p class="from-google__user-name">Kristin Watson</p>
-                      <a
-                        class="from-google__user-email"
-                        href="kristinwatson@gmail.com"
-                        >kristinwatson@gmail.com</a
-                      >
-                    </div>
-                  </div>
-                  <div class="from-google__text-box">
-                    <p class="from-google__text">
-                      Id adipiscing vulputate arcu pretium dignissim. Felis
-                      vulputate tellus velit consectetur. Congue convallis
-                      aliquam eget ullamcorper quam pellentesque cursus.
-                      Dictumst mauris ac, quis orci morbi ultrices faucibus
-                      volutpat mauris. Bibendum sed ut lectus facilisi amet
-                      orci. Interdum massa orci urna id ac cras arcu.
-                    </p>
-                  </div>
-                </div>
-                <div class="from-google__starts-box">
-                  <p class="from-google__start-text">Star rating:</p>
-                  <ul class="from-google__starts">
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                    <li class="from-google__starts-item"></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- from goggle slider end -->
-
-      <!-- BRAND ARTICLE START -->
-      <article class="brand">
-        <h2 class="visually-hidden">Brands</h2>
-        <div class="container">
-          <p class="brand__text">More than 50 brands of cars</p>
-          <ul class="brand__list">
-            <li class="brand__item">
-              <img
-                class="brand__img"
-                src="./images/ford.png"
-                width="100"
-                height="28"
-                srcset="./images/ford.png 1x, ./images/ford@2x.png 2x"
-                alt="Ford" />
-            </li>
-            <li class="brand__item">
-              <img
-                class="brand__img"
-                src="./images/nissan.png"
-                width="100"
-                height="28"
-                srcset="./images/nissan.png 1x, ./images/nissan@2x.png 2x"
-                alt="Nissan" />
-            </li>
-            <li class="brand__item">
-              <img
-                class="brand__img"
-                src="./images/toyota.png"
-                width="100"
-                height="28"
-                srcset="./images/toyota.png 1x, ./images/toyota@2x.png 2x"
-                alt="Toyota" />
-            </li>
-            <li class="brand__item">
-              <img
-                class="brand__img"
-                src="./images/dodge.png"
-                width="100"
-                height="28"
-                srcset="./images/dodge.png 1x, ./images/dodge@2x.png 2x"
-                alt="Dodge" />
-            </li>
-            <li class="brand__item">
-              <img
-                class="brand__img"
-                src="./images/hyundai.png"
-                width="100"
-                height="28"
-                srcset="./images/hyundai.png 1x, ./images/hyundai@2x.png 2x"
-                alt="Hyundai" />
-            </li>
-            <li class="brand__item">
-              <img
-                class="brand__img"
-                src="./images/jeep.png"
-                width="100"
-                height="28"
-                srcset="./images/jeep.png 1x, ./images/jeep@2x.png 2x"
-                alt="Jeep" />
-            </li>
-          </ul>
-        </div>
-      </article>
-      <!-- BRAND ARTICLE END -->
-
-      <!-- SERVICE SECTION START -->
-      <section class="service">
-        <div class="container">
-          <div class="service__wrap">
-            <div class="service__title-box">
-              <h2 class="service__title">Unparalleled service</h2>
-              <p class="service__text">
-                Whether you are looking for Newark Airport car rental, an
-                insurance replacement vehicle or minivan to take on vacation Car
-                rental has it all.
-              </p>
             </div>
-            <ul class="service__service-list service-list">
-              <li class="service-list__item">
-                <div class="service-list__title-wrap">
-                  <div class="service-list__title-box">
-                    <h3 class="service-list__title">Book online, pay online</h3>
-                  </div>
-                  <p class="service-list__text">
-                    Complete the booking process A-Z, with our easy online
-                    system
-                  </p>
-                </div>
-              </li>
-              <li class="service-list__item">
-                <div class="service-list__title-wrap">
-                  <div class="service-list__title-box">
-                    <h3 class="service-list__title">
-                      Guaranteed car reservation
-                    </h3>
-                  </div>
-                  <p class="service-list__text">
-                    When you book with Car rental, you can be confident your car
-                    will be waiting for you
-                  </p>
-                </div>
-              </li>
-              <li class="service-list__item">
-                <div class="service-list__title-wrap">
-                  <div class="service-list__title-box">
-                    <h3 class="service-list__title">
-                      Unparalleled customer service
-                    </h3>
-                  </div>
-                  <p class="service-list__text">
-                    We're here to help. We pride ourselves in our customer
-                    service
-                  </p>
-                </div>
-              </li>
-              <li class="service-list__item">
-                <div class="service-list__title-wrap">
-                  <div class="service-list__title-box">
-                    <h3 class="service-list__title">
-                      No reservation or booking fees
-                    </h3>
-                  </div>
-                  <p class="service-list__text">
-                    No cancellation fees if cancelled 24 hours prior to booking
-                    time
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- SERVICE SECTION END -->
+        </section>
+        <!-- from goggle slider end -->
 
-      <!-- SAFE section start  -->
-      <section class="safe">
-        <div class="container">
-          <div class="safe__inner">
-            <div class="safe__info">
-              <div class="safe__titlebox">
-                <h2 class="safe__title">Car rental keeps you safe</h2>
-              </div>
-              <div class="safe__textbox">
-                <p class="safe__desc">
-                  The safety of our employees and renters is our number one
-                  priority. In addition to being confident your vehicle is
-                  cleaned and sanitized every time you rent, you can also feel
-                  confident that we will take every opportunity to enhance the
-                  health and safety measures currently practiced in our
-                  operations.
-                </p>
-              </div>
-              <ul class="safe__list">
-                <li class="safe__item">
-                  <div class="safe__itembox">
-                    <h3 class="safe__text">
-                      Every car is thoroughly sanitized and cleaned
-                    </h3>
-                  </div>
-                </li>
-                <li class="safe__item">
-                  <div class="safe__itembox">
-                    <h3 class="safe__text">All of our employees wear masks</h3>
-                  </div>
-                </li>
-                <li class="safe__item">
-                  <div class="safe__itembox">
-                    <h3 class="safe__text">
-                      We stay up to date with all protocol from the CDC
-                    </h3>
-                  </div>
-                </li>
-              </ul>
+        <!-- BRAND ARTICLE START -->
+        <article class="brand">
+            <h2 class="visually-hidden">Brands</h2>
+            <div class="container">
+                <p class="brand__text">More than 50 brands of cars</p>
+                <ul class="brand__list js-brand-list">
+                    <li class="brand__item">
+                        <img class="brand__img" src="./images/ford.png" width="100" height="28"
+                            srcset="./images/ford.png 1x, ./images/ford@2x.png 2x" alt="Ford" />
+                    </li>
+                    <li class="brand__item">
+                        <img class="brand__img" src="./images/nissan.png" width="100" height="28"
+                            srcset="./images/nissan.png 1x, ./images/nissan@2x.png 2x" alt="Nissan" />
+                    </li>
+                    <li class="brand__item">
+                        <img class="brand__img" src="./images/toyota.png" width="100" height="28"
+                            srcset="./images/toyota.png 1x, ./images/toyota@2x.png 2x" alt="Toyota" />
+                    </li>
+                    <li class="brand__item">
+                        <img class="brand__img" src="./images/dodge.png" width="100" height="28"
+                            srcset="./images/dodge.png 1x, ./images/dodge@2x.png 2x" alt="Dodge" />
+                    </li>
+                    <li class="brand__item">
+                        <img class="brand__img" src="./images/hyundai.png" width="100" height="28"
+                            srcset="./images/hyundai.png 1x, ./images/hyundai@2x.png 2x" alt="Hyundai" />
+                    </li>
+                    <li class="brand__item">
+                        <img class="brand__img" src="./images/jeep.png" width="100" height="28"
+                            srcset="./images/jeep.png 1x, ./images/jeep@2x.png 2x" alt="Jeep" />
+                    </li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- SAFE section finish  -->
+        </article>
+        <!-- BRAND ARTICLE END -->
+
+        <!-- SERVICE SECTION START -->
+        <section class="service">
+            <div class="container">
+                <div class="service__wrap">
+                    <div class="service__title-box">
+                        <h2 class="service__title">Unparalleled service</h2>
+                        <p class="service__text">
+                            Whether you are looking for Newark Airport car rental, an
+                            insurance replacement vehicle or minivan to take on vacation Car
+                            rental has it all.
+                        </p>
+                    </div>
+                    <ul class="service__service-list service-list">
+                        <li class="service-list__item">
+                            <div class="service-list__title-wrap">
+                                <div class="service-list__title-box">
+                                    <h3 class="service-list__title">Book online, pay online</h3>
+                                </div>
+                                <p class="service-list__text">
+                                    Complete the booking process A-Z, with our easy online
+                                    system
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-list__item">
+                            <div class="service-list__title-wrap">
+                                <div class="service-list__title-box">
+                                    <h3 class="service-list__title">
+                                        Guaranteed car reservation
+                                    </h3>
+                                </div>
+                                <p class="service-list__text">
+                                    When you book with Car rental, you can be confident your car
+                                    will be waiting for you
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-list__item">
+                            <div class="service-list__title-wrap">
+                                <div class="service-list__title-box">
+                                    <h3 class="service-list__title">
+                                        Unparalleled customer service
+                                    </h3>
+                                </div>
+                                <p class="service-list__text">
+                                    We're here to help. We pride ourselves in our customer
+                                    service
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-list__item">
+                            <div class="service-list__title-wrap">
+                                <div class="service-list__title-box">
+                                    <h3 class="service-list__title">
+                                        No reservation or booking fees
+                                    </h3>
+                                </div>
+                                <p class="service-list__text">
+                                    No cancellation fees if cancelled 24 hours prior to booking
+                                    time
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICE SECTION END -->
+
+        <!-- SAFE section start  -->
+        <section class="safe">
+            <div class="container">
+                <div class="safe__inner">
+                    <div class="safe__info">
+                        <div class="safe__titlebox">
+                            <h2 class="safe__title">Car rental keeps you safe</h2>
+                        </div>
+                        <div class="safe__textbox">
+                            <p class="safe__desc">
+                                The safety of our employees and renters is our number one
+                                priority. In addition to being confident your vehicle is
+                                cleaned and sanitized every time you rent, you can also feel
+                                confident that we will take every opportunity to enhance the
+                                health and safety measures currently practiced in our
+                                operations.
+                            </p>
+                        </div>
+                        <ul class="safe__list">
+                            <li class="safe__item">
+                                <div class="safe__itembox">
+                                    <h3 class="safe__text">
+                                        Every car is thoroughly sanitized and cleaned
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="safe__item">
+                                <div class="safe__itembox">
+                                    <h3 class="safe__text">All of our employees wear masks</h3>
+                                </div>
+                            </li>
+                            <li class="safe__item">
+                                <div class="safe__itembox">
+                                    <h3 class="safe__text">
+                                        We stay up to date with all protocol from the CDC
+                                    </h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SAFE section finish  -->
     </main>
     <!-- Main finish  -->
 
     <!-- Footer start -->
     <footer class="site-footer">
-      <div class="container">
-        <div class="footer-box">
-          <div class="footer-box__header">
-            <div class="footer-box__link-box">
-              <a href="./index.html">
-                <img class="footer-box__logo"
-                  src="./images/logo-m.png"
-                  width="100"
-                  height="26"
-                  srcset="./images/logo-m.png 1x, ./images/logo-m@2x.png 2x"
-                  alt="Site's logo" />
-              </a>
-              <p class="footer-box__text">
-                Car rental offers a wide range of cars available for rent in
-                Newark EWR Airport NJ. We pride ourselves in our customer service,
-                and hassle-free renting experience.
-              </p>
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-box__header">
+                    <div class="footer-box__link-box">
+                        <a href="./index.html">
+                            <img class="footer-box__logo" src="./images/logo-m.png" width="100" height="26"
+                                srcset="./images/logo-m.png 1x, ./images/logo-m@2x.png 2x" alt="Site's logo" />
+                        </a>
+                        <p class="footer-box__text">
+                            Car rental offers a wide range of cars available for rent in
+                            Newark EWR Airport NJ. We pride ourselves in our customer service,
+                            and hassle-free renting experience.
+                        </p>
+                    </div>
+                    <strong class="footer-box__strong">
+                        © 2022 Car rental Terms & Conditions
+                    </strong>
+                </div>
             </div>
-            <strong class="footer-box__strong">
-              © 2022 Car rental Terms & Conditions
-            </strong>
-          </div>
         </div>
-      </div>
     </footer>
     <!-- Footer finish -->
     <div class="login-modal js-login-modal">
-      <form
-        class="login-modal__form js-login-form"
-        action="https://echo.htmlacademy.ru/"
-        method="post"
-        autocomplete="off">
-        <button
-          class="login-modal__close js-login-modal-close"
-          type="button"></button>
-        <h2 class="login-modal__title">Login</h2>
-        <p class="login-modal__desc">
-          Use the email and password that you login
-        </p>
-        <div class="login-modal__label">
-          <input
-            class="login-modal__input"
-            type="email"
-            name="user_email"
-            aria-label="Enter your email"
-            placeholder="Email" />
-          <div class="login-modal__box">
-            <span class="login-modal__invalid">Entered the wrong email</span>
-          </div>
-        </div>
-        <div class="login-modal__label">
-          <input
-            class="login-modal__input js-password-input"
-            type="password"
-            name="user_password"
-            aria-label="Enter your password"
-            placeholder="Password"
-            minlength="8"
-            required />
-          <button
-            class="login-modal__showpassword js-show-password-btn"
-            type="button"></button>
-          <div class="login-modal__box">
-            <span class="login-modal__invalid">Entered the wrong password</span>
-            <span class="login-modal__passwordtext"> Forgot password </span>
-          </div>
-        </div>
-        <p class="login-modal__text">I want to create an account</p>
-        <button class="login-modal__btn" type="submit">Login</button>
-      </form>
+        <form class="login-modal__form js-login-form" action="https://echo.htmlacademy.ru/" method="post"
+            autocomplete="off">
+            <button class="login-modal__close js-login-modal-close" type="button"></button>
+            <h2 class="login-modal__title">Login</h2>
+            <p class="login-modal__desc">
+                Use the email and password that you login
+            </p>
+            <div class="login-modal__label">
+                <input class="login-modal__input" type="email" name="user_email" aria-label="Enter your email"
+                    placeholder="Email" />
+                <div class="login-modal__box">
+                    <span class="login-modal__invalid">Entered the wrong email</span>
+                </div>
+            </div>
+            <div class="login-modal__label">
+                <input class="login-modal__input js-password-input" type="password" name="user_password"
+                    aria-label="Enter your password" placeholder="Password" minlength="8" required />
+                <button class="login-modal__showpassword js-show-password-btn" type="button"></button>
+                <div class="login-modal__box">
+                    <span class="login-modal__invalid">Entered the wrong password</span>
+                    <span class="login-modal__passwordtext"> Forgot password </span>
+                </div>
+            </div>
+            <p class="login-modal__text">I want to create an account</p>
+            <button class="login-modal__btn" type="submit">Login</button>
+        </form>
     </div>
 
+    
     <button id="myBtn"></button>
+
+
+    <template class="js-brand-template">
+        <li class="brand__item">
+            <img class="brand__img js-brand-img" src="" width="100" height="28"
+                srcset="" alt="" />
+        </li>
+    </template>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="./js//slick.min.js"></script>
     <script src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
